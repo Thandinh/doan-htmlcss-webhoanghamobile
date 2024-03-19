@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra đơn hàng</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6c10fb920c.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray">
+    <div id="header">
+       <div id="header-1">
+            <div class="container">
+                <div class="nav">
+                    <ul>
+                        <li style="cursor: pointer;" class="js-login"><a >Đăng nhập</a></li>
+                        <li><a href="checkdonhang.html">Tra cứu đơn hàng</a></li>
+                        <li style="cursor: pointer;" class="js-login"><a>Tuyển dụng</a></li>
+                        <li><a href="hethongsieuthi.html">Hệ thống 128 siêu thị</a></li>
+                        <li><a href="baohanh.html">Trung tâm bảo hành</a></li>
+                        <li><a href="sanphamdaxem.html">Sản phẩm đã xem</a></li>
+                        <li><a href="gioithieu.html">Giới thiệu</a></li>
+                        <li style="cursor: pointer;" class="js-login"><a>Bản mobile</a></li>
+                        <div class="clear"></div>
+                     </ul>
+                </div>
+            </div>
+        </div>
+        <div id="header-2">
+            <div class="container">
+                <div class="w30 left">
+                    <div class="box">
+                        <a href="index.html"><img src="image/logo-text.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="w50 left">
+                   <div class="box">
+                        <div class="search">
+                            <form action="">
+                                <input type="search" placeholder="Hôm nay bạn cần tìm gì?">
+                                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </form>
+                        </div>
+                   </div>
+                </div>
+                <div class="left">
+                    <div class="box">
+                        <div class="box-content check">
+                            <a href="">
+                                <div class="left">
+                                    <i class="fa-solid fa-truck-fast"></i>
+                                </div>
+                                <p class="left">kiểm tra đơn<br>hàng</p>
+                                <div class="clear"></div>
+                           </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="left">
+                    <div class="box">
+                        <div class="cart">
+                            <a href="giohang.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="header-3">
+           <div class="container">
+                <div class="menu text-center">
+                    <div class="content">
+                        <ul class="text-center menu-item">
+                            <li><a href="">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <p>ĐIỆN THOẠI</p>
+                            </a></li>
+                            <li><a href="">
+                                <i class="fa-solid fa-laptop"></i>
+                                <p>LAPTOP</p>
+                            </a></li>
+                            <li><a href="">
+                                <i class="fa-solid fa-tablet-screen-button"></i>
+                                <p>TABLET</p>
+                            </a></li>
+                            <li><a href="">
+                                <i class="fa-solid fa-desktop"></i>
+                                <p>MÀN HÌNH</p>
+                            </a></li>
+                            <li><a href="">
+                                <i class="fa-solid fa-display"></i>
+                                <p>SMART TV</p>
+                            </a></li>
+                            <li><a href="">
+                                <i class="fa-solid fa-stopwatch"></i>
+                                <p>ĐỒNG HỒ</p>
+                            </a></li>
+                            <li><a href="">
+                                <i class="fa-solid fa-headphones"></i>
+                                <p>ÂM THANH</p>
+                            </a></li>
+                            <li><a href="">
+                                <i class="fa-solid fa-house"></i>
+                                <p>SMART HOME</p>
+                            </a></li>
+                            <li><a href="">
+                                <i class="fa-solid fa-keyboard"></i>
+                                <p>PHỤ KIỆN</p>
+                            </a></li>
+                            <li><a href="">
+                                <i class="fa-solid fa-gamepad"></i>
+                                <p>ĐỒ CHƠI CN</p>
+                            </a></li>
+                            <li><a href="">
+                                <i class="fa-solid fa-cash-register"></i>
+                                <p>MÁY TRÔI</p>
+                            </a></li>
+                            <li><a href="">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                                <p>SỮA CHỮA</p>
+                            </a></li>
+                            <li><a href="">
+                                <i class="fa-solid fa-handshake-simple"></i>
+                                <p>DỊCH VỤ</p>
+                            </a></li>
+                            <li><a href="">
+                                <i class="fa-solid fa-newspaper"></i>
+                                <p>TIN HOT</p>
+                            </a></li>
+                            <li><a href="">
+                                <i class="fa-solid fa-bolt-lightning"></i>
+                                <p>ƯU ĐÃI</p>
+                            </a></li>
+                            <div class="clear"></div>
+                        </ul>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+
+
+    <div id="main">
+        <div id="check-donhang">
+            <div class="container">
+                <div class="text-center">
+                    <h1>Kiểm tra đơn hàng của bạn</h1>
+                    <input type="text" placeholder="Vui lòng nhập mã đơn hàng *"><br>
+                    <button type="submit">
+                        TRA CỨU
+                    </button>
+                </div>
+                <div class="Dangnhap">
+                    <div class="left icon">
+                        <img src="image/trangcon/icon-youknow.png" alt="">
+                    </div>
+                    <div class="left text">
+                        <strong>ĐĂNG NHẬP SẼ GIÚP BẠN QUẢN LÝ ĐƠN HÀNG CỦA MÌNH VÀ TRẢI NGHIỆM WEBSITE TỐT HƠN</strong>
+                        <a style="cursor: pointer;" class="js-login">ĐĂNG NHẬP</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="sanphambanchay">
+            <div class="container">
+                <div class="heading-banner">
+                    <a href="#">TOP SẢN PHẨM BÁN CHẠY</a>
+                </div>
+                <div class="Sanphambanchay-product">
+                    <div class="w20 left">
+                        <div class="box-product">
+                            <div class="box-content-product">
+                                <a href="product.html">
+                                    <div class="text-center">
+                                        <img src="image/trangcon/tecno-spark-10.webp" alt="">
+                                    </div>
+                                    <h3 class="text-center">TECNO SPARK 10 (8GB/128GB) - Chính hãng</h3>
+                                </a>
+                                <span class="price">
+                                    <strong class="left" style="margin-left: 20px;">2,750,000</strong>
+                                    <h5 class="left">₫</h5>
+                                    <p class="left">3,590,000 đ</p>
+                                    <div class="clear"></div>
+                                </span>
+                                <!-- <i>Giá HSSV: <strong>15,640,000 đ</strong></i>
+                                <div class="note">
+                                    <span><span class="km">KM</span> Giảm thêm tới 300.000đ khi thanh to... <strong>VÀ 5 KM KHÁC</strong></span>      
+                                </div> -->
+                                <!-- <div class="logo">
+                                    <img style="width: 100%;" src="image/apple.png" alt="">
+                                </div> -->
+                                <!-- <div class="sub">
+                                    <strong>TRẢ GÓP 0%</strong>
+                                </div> -->
+                              
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="w20 left">
+                        <div class="box-product">
+                            <div class="box-content-product">
+                                <a href="product.html">
+                                    <div class="text-center">
+                                        <img src="image/trangcon/loa-bluetooth-olike-s3-1-1.webp" alt="">
+                                    </div>
+                                    <h3 class="text-center">Loa Olike S3 - Chính hãng</h3>
+                                </a>
+                                <span class="price">
+                                    <strong class="left" style="margin-left: 20px;">390,000</strong>
+                                    <h5 class="left">₫</h5>
+                                    <p class="left">1,500,000 đ</p>
+                                    <div class="clear"></div>
+                                </span>
+                                <!-- <i>Giá HSSV: <strong>14,640,000 đ</strong></i> -->
+                                <!-- <div class="note">
+                                    <span><span class="km">KM</span>Giảm thêm tới 300.000đ khi thanh to... <strong>VÀ 3 KM KHÁC</strong></span>      
+                                </div> -->
+                                <!-- <div class="logo">
+                                    <img style="width: 100%;" src="image/laptop-hot/tra-gop.png" alt="">
+                                </div> -->
+                                <!-- <div class="sub">
+                                    <strong>Giảm 20% khung giá treo</strong>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="w20 left">
+                        <div class="box-product">
+                            <div class="box-content-product">
+                                <a href="product.html">
+                                    <div class="text-center">
+                                        <img src="image/trangcon/anh-chup-man-hinh-2022-09-08-luc-01-57-13-removebg-preview.webp" alt="">
+                                    </div>
+                                    <h3 class="text-center">iPhone 14 (128GB) - Chính hãng VN/A</h3>
+                                </a>
+                                <span class="price">
+                                    <strong class="left" style="margin-left: 54px;">18,450,000</strong>
+                                    <h5 class="left">₫</h5>
+                                    <!-- <p class="left">3,290,000 đ</p> -->
+                                    <div class="clear"></div>
+                                </span>
+                                <!-- <i>Giá HSSV: <strong>8,140,000 đ</strong></i> -->
+                                <!-- <div class="note">
+                                    <span><span class="km">KM</span> Giảm thêm tới 300.000đ khi thanh to... <strong>VÀ 3 KM KHÁC</strong></span>      
+                                </div> -->
+                                <!-- <div class="logo">
+                                    <img style="width: 100%;" src="image/laptop-hot/tra-gop.png" alt="">
+                                </div> -->
+                                <!-- <div class="sub">
+                                    <strong>Giảm 20% khung giá treo</strong>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="w20 left">
+                        <div class="box-product">
+                            <div class="box-content-product">
+                                <a href="product.html">
+                                    <div class="text-center">
+                                        <img src="image/trangcon/image-removebg-preview-8.webp" alt="">
+                                    </div>
+                                    <h3 class="text-center">Tai nghe chống ồn BWOO DPOD MAX</h3>
+                                </a>
+                                <span class="price">
+                                    <strong class="left" style="margin-left: 20px;">270,000</strong>
+                                    <h5 class="left">₫</h5>
+                                    <p class="left">990,000 đ</p>
+                                    <div class="clear"></div>
+                                </span>
+                                <!-- <i>Giá HSSV: <strong>16,240,000 đ</strong></i> -->
+                                <!-- <div class="note">
+                                    <span><span class="km">KM</span> Giảm thêm tới 300.000đ khi thanh to...<strong>VÀ 5 KM KHÁC</strong></span>      
+                                </div> -->
+                                <!-- <div class="logo">
+                                    <img style="width: 100%;" src="image/apple.png" alt="">
+                                </div> -->
+                                <!-- <div class="sub">
+                                    <strong>Giảm 20% khung giá treo</strong>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="w20 left">
+                        <div class="box-product">
+                            <div class="box-content-product">
+                                <a href="product.html">
+                                    <div class="text-center">
+                                        <img src="image/trangcon/xiaomi-smart-air-purifier-lite-7.webp" alt="">
+                                    </div>
+                                    <h3 class="text-center">Máy lọc không khí Xiaomi Air Purifier 4 Lite - Chính hãng
+                                    </h3>
+                                </a>
+                                <span class="price">
+                                    <strong class="left" style="margin-left: 20px;">1,990,000</strong>
+                                    <h5 class="left">₫</h5>
+                                    <p class="left">3,990,000 đ</p>
+                                    <div class="clear"></div>
+                                </span>
+                                <!-- <i>Giá HSSV: <strong>10.440.000 đ</strong></i> -->
+                                <!-- <div class="note">
+                                    <span><span class="km">KM</span> Giảm thêm tới 300.000đ khi thanh to... <strong>VÀ 3 KM KHÁC</strong></span>      
+                                </div> -->
+                                <!-- <div class="logo">
+                                    <img style="width: 100%;" src="image/laptop-hot/tra-gop.png" alt="">
+                                </div> -->
+                                <!-- <div class="sub">
+                                    <strong>Giảm 20% khung giá treo</strong>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="w70 left">
+                    <div class="w25 left">
+                        <div class="text">
+                            <h4>Hỗ Trợ - Dịch Vụ</h4>
+                            <ul>
+                                <li class="hvli"><a href="">Chính sách và hướng dẫn mua hàng trả góp</a></li>
+                                <li class="hvli"><a href="">Hướng dẫn mua hàng và chính sách vận chuyển</a></li>
+                                <li class="hvli"><a href="">Tra cứu đơn hàng</a></li>
+                                <li class="hvli"><a href="">Chính sách đổi mới và bảo hành</a></li>
+                                <li class="hvli"><a href="">Dịch vụ bảo hành mở rộng</a></li>
+                                <li class="hvli"><a href="">Chính sách bảo mật</a></li>
+                                <li class="hvli"><a href="">Chính sách giải quyết khiếu nại</a></li>
+                                <li class="hvli"><a href="">Quy chế hoạt động</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="w25 left">
+                        <div class="text">
+                            <h4>Thông tin liên hệ</h4>
+                            <ul>
+                                <li class="hvli"><a href="">Thông tin các trang TMĐT</a></li>
+                                <li class="hvli"><a href="">Dịch vụ sửa chữa Hoàng Hà Care</a></li>
+                                <li class="hvli"><a href="">Khách hàng doanh nghiệp (B2B)</a></li>
+                                <li class="hvli"><a href="">Tra cứu bảo hành</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="w25 left">
+                        <div class="text">
+                            <h4>Hệ thống 128 siêu thị trên toàn quốc</h4>
+                            <ul>
+                                <li class="hvli"><a href="">Danh sách 128 siêu thị trên toàn quốc</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="w25 left">
+                        <div class="text">
+                            <h4>Tổng đài</h4>
+                            <ul>
+                                <li class="sdt"><a href="">1900.2091</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="w30 left">
+                    <div class="w50 left">
+                        <div class="box-img">
+                            <h4>Thanh toán miễn phí</h4>
+                            <div>
+                                <img src="image/footer/logo-visa.png" alt="">
+                                <img src="image/footer/logo-master.png" alt="">
+                            </div>
+                            <div>
+                                <img src="image/footer/logo-jcb.png" alt="">
+                                <img src="image/footer/logo-samsungpay.png" alt="">
+                            </div>
+                            <div>
+                                <img src="image/footer/logo-atm.png" alt="">
+                                <img src="image/footer/logo-vnpay.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w50 left">
+                        <div class="box-img">
+                            <h4>Hình thức vận chuyển</h4>
+                            <img src="image/footer/nhattin.jpg" alt="">
+                            <img src="image/footer/vnpost.jpg" alt="">
+                            <div class="BCT">
+                                <a href="http://online.gov.vn/Home/WebDetails/28738">
+                                    <img src="image/footer/logo-bct.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="text-center ft-end">
+                <span>© 2020. CÔNG TY CỔ PHẦN XÂY DỰNG VÀ ĐẦU TƯ THƯƠNG MẠI HOÀNG HÀ. MST: 0106713191. (Đăng ký lần đầu: Ngày 15 tháng 12 năm 2014, Đăng ký thay đổi ngày 24/11/2022)</span><br>
+                <strong>GP số 426/GP-TTĐT do sở TTTT Hà Nội cấp ngày 22/01/2021</strong><br>
+                <span>Địa chỉ: Số 89 Đường Tam Trinh, Phường Mai Động, Quận Hoàng Mai, Thành Phố Hà Nội, Việt Nam. Điện thoại: 1900.2091. Chịu trách nhiệm nội dung: <strong>Đồ án Web</strong></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="trangthamkhao" class="text-center">
+        <h5>Đồ án tham khảo theo trang thương mại điện tử <a href="https://hoanghamobile.com/">Hoàng Hà mobile</a></h5>
+    </div>
+
+    <div class="modal js-modal">
+        <div class="container-modal js-modal-container">
+            <div class="icon-close js-modal-close">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+            <div class="w35 left">
+                <div class="box-content">
+                    <div class="box-img text-center">
+                        <img src="image/login-bg.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="w65 left">
+                <div class="box-content">
+                    <div class="box-text">
+                        <h1>Đăng nhập</h1>
+                        <div class="btn-log">
+                            <button class="btn-log-fb">
+                                <img src="image/login-facebook.png" alt="">
+                                <span>Tiếp tục với Facebook</span>
+                            </button>
+    
+                            <button class="btn-log-google">
+                                <img src="image/login-google.png" alt="">
+                                <span>Đăng nhập với Google</span>
+                            </button>
+                        </div>
+                        <div class="split">
+                            <div class="w46 left">
+                                <div class="box-ke-ngang">
+
+                                </div>
+                            </div>
+
+                            <div class="w8 left text-center">
+                                <p>Hoặc</p>
+                            </div>
+
+                            <div class="w46 left">
+                                <div class="box-ke-ngang">
+                                    
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                        <form class="form-taikhoan" action="">
+                            <div class="label-form">
+                                <label for="user">Tài khoản</label>
+                            </div>
+                            <input id="user" type="text"><br>
+                            <div class="label-form">
+                                <label for="password">Mật khẩu</label>
+                            </div>
+                            <input id="password" type="password">
+                        </form>
+                        <div class="nhodangnhap">
+                            <label class="container-nhodangnhap">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                                Nhớ đăng nhập
+                              </label>
+                        </div>
+
+                        <div class="bottom-form">
+                            <button class="btn-bottom-form btn-bottom-login">Đăng nhập</button>
+                            <a class="btn-bottom-form btn-bottom-register" href="">Đăng ký</a>
+                        </div>
+
+                        <div class="forgot-password right">
+                            <a href="#">Quên mật khẩu?</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>  
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <script>
+        const loginBtns = document.querySelectorAll('.js-login')
+        const modal = document.querySelector('.js-modal')
+        const modalContainer = document.querySelector('.js-modal-container')
+        const modalClose = document.querySelector('.js-modal-close')
+
+        function showLogin() {
+            modal.classList.add('open')
+        }
+
+        function hideLogin() {
+            modal.classList.remove('open')
+        }
+
+        for (const loginBtn of loginBtns) {
+            loginBtn.addEventListener('click', showLogin)
+        }
+
+        modalClose.addEventListener('click', hideLogin)
+
+        modal.addEventListener('click', hideLogin)
+
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
+        }
+        ) 
+    </script>
+</body>
+</html>

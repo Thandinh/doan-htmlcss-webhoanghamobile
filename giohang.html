@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6c10fb920c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="header-1">
+            <div class="container">
+                <div class="nav">
+                    <ul>
+                        <li style="cursor: pointer;" class="js-login"><a >Đăng nhập</a></li>
+                        <li><a href="checkdonhang.html">Tra cứu đơn hàng</a></li>
+                        <li style="cursor: pointer;" class="js-login"><a>Tuyển dụng</a></li>
+                        <li><a href="hethongsieuthi.html">Hệ thống 128 siêu thị</a></li>
+                        <li><a href="baohanh.html">Trung tâm bảo hành</a></li>
+                        <li><a href="sanphamdaxem.html">Sản phẩm đã xem</a></li>
+                        <li><a href="gioithieu.html">Giới thiệu</a></li>
+                        <li style="cursor: pointer;" class="js-login"><a>Bản mobile</a></li>
+                        <div class="clear"></div>
+                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="giohang">
+            <div class="container">
+                <div class="back-tc">
+                    <a href="index.html">
+                        <i class="fa-solid fa-chevron-left left"></i>
+                        <strong class="left">Quay lại</strong>
+                        <div class="clear"></div>
+                    </a>
+                </div>
+                <div class="text-center box-trangcon">
+                    <div class="icon">
+                        <i class="fa-regular fa-circle-check"></i>
+                    </div>
+                    <div class="text">
+                        <strong>Giỏ hàng</strong>
+                    </div>
+                    <div>
+                        <img src="image/trangcon/no-item.png" alt="">
+                    </div>
+                    <div class="text">
+                        <strong>Hiện không có sản phẩm nào trong giỏ hàng</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="modal js-modal">
+        <div class="container-modal js-modal-container">
+            <div class="icon-close js-modal-close">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+            <div class="w35 left">
+                <div class="box-content">
+                    <div class="box-img text-center">
+                        <img src="image/login-bg.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="w65 left">
+                <div class="box-content">
+                    <div class="box-text">
+                        <h1>Đăng nhập</h1>
+                        <div class="btn-log">
+                            <button class="btn-log-fb">
+                                <img src="image/login-facebook.png" alt="">
+                                <span>Tiếp tục với Facebook</span>
+                            </button>
+    
+                            <button class="btn-log-google">
+                                <img src="image/login-google.png" alt="">
+                                <span>Đăng nhập với Google</span>
+                            </button>
+                        </div>
+                        <div class="split">
+                            <div class="w46 left">
+                                <div class="box-ke-ngang">
+
+                                </div>
+                            </div>
+
+                            <div class="w8 left text-center">
+                                <p>Hoặc</p>
+                            </div>
+
+                            <div class="w46 left">
+                                <div class="box-ke-ngang">
+                                    
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+                        <form class="form-taikhoan" action="">
+                            <div class="label-form">
+                                <label for="user">Tài khoản</label>
+                            </div>
+                            <input id="user" type="text"><br>
+                            <div class="label-form">
+                                <label for="password">Mật khẩu</label>
+                            </div>
+                            <input id="password" type="password">
+                        </form>
+                        <div class="nhodangnhap">
+                            <label class="container-nhodangnhap">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                                Nhớ đăng nhập
+                              </label>
+                        </div>
+
+                        <div class="bottom-form">
+                            <button class="btn-bottom-form btn-bottom-login">Đăng nhập</button>
+                            <a class="btn-bottom-form btn-bottom-register" href="">Đăng ký</a>
+                        </div>
+
+                        <div class="forgot-password right">
+                            <a href="#">Quên mật khẩu?</a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>  
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <script>
+        const loginBtns = document.querySelectorAll('.js-login')
+        const modal = document.querySelector('.js-modal')
+        const modalContainer = document.querySelector('.js-modal-container')
+        const modalClose = document.querySelector('.js-modal-close')
+
+        function showLogin() {
+            modal.classList.add('open')
+        }
+
+        function hideLogin() {
+            modal.classList.remove('open')
+        }
+
+        for (const loginBtn of loginBtns) {
+            loginBtn.addEventListener('click', showLogin)
+        }
+
+        modalClose.addEventListener('click', hideLogin)
+
+        modal.addEventListener('click', hideLogin)
+
+        modalContainer.addEventListener('click', function (event) {
+            event.stopPropagation()
+        }
+        ) 
+    </script>
+</body>
+</html>
